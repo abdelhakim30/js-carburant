@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="style.css">
+      <script type="texte/javascript" scr="jquery-3.1.1.min.js"></script>
+      <script src="jquery-1.12.4.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+      <script type="texte/javascript" scr="cours.js"></script>
+    <title></title>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <SCRIPT language="javascript">
+        function choixprop(form3) {
+        if (form3.choix[0].checked) { alert("Vous avez choisi gasoil ") };
+        if (form3.choix[1].checked) { alert("Vous avez choisi sp95 e-10 " ) };
+        if (form3.choix[2].checked) { alert("Vous avez choisi sp98 " ) };
+        }
+        function secret(){
+          var msg='code';
+
+          if(prompt('veuillez saisir votre code','')=='1234'){
+            msg+=' - <span class="msg valid">code valide</span>';
+
+            <!-- window.location.href= ;-->
+          }
+          else
+            msg+=' - <span class="msg error">Mauvais mot de passe</span>';
+
+          document.getElementById('title').innerHTML=msg;
+          return;
+        }
+    </SCRIPT>
+
+  </head>
+
+
+  <body>
+
+    Bienvenue <br>
+    Carburant
+    <FORM NAME="form3">
+    <input type="image" src="image/diesel.png" style="height:40px;" />
+    <INPUT TYPE="radio" NAME="choix" VALUE="1">Diesel<BR>
+    <input type="image" src="image/SP95.png" style="height:45px;" />
+    <INPUT TYPE="radio" NAME="choix" VALUE="2">sp.95<BR>
+    <input type="image" src="image/SP98.png" style="height:45px;" />
+    <INPUT TYPE="radio" NAME="choix" VALUE="3">sp.98<BR>
+    <INPUT TYPE="button"NAME="but" VALUE="Confirmer votre choix" onClick="choixprop(form3)">
+
+
+
+
+
+
+		<h1 id="title"></h1>
+		<input type="button" value="Veuillez saisir votre code " onclick="secret(1234)"/>
+
+
+
+
+    <script type="texte/javascript" scr="cours.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    CODE:
+    <input type="text"  name="code" value=""  size="" />
+    <input type="submit" value="Envoyer" id="envoyer"   />
+
+
+
+    <form>
+        <input type="radio" name="asdf"  onClick="javascript:alert(' gasoil')">
+        <input type="radio" name="asdf"  onClick="javascript:alert('sp.95')">
+        <input type="radio" name="asdf"  onClick="javascript:alert('sp.98')">
+        <input type="reset">
+        <input type="password">
+        <input type="text">
+      <select>
+        <option>gasoil</option>
+        <option>sp.95</option>
+        <option>sp.98</option>
+      </select>
+        <button>Button</button>
+
+
+        <script type="text/javascript">
+
+function queDesChiffres(champ) {
+  if(!/^[0-9]+$/.test(champ.value)) {
+    alert("erreur code");
+    champ.focus();
+    return false;
+  }
+  return true;
+}
+function verifForm(formulaire) {
+  var ok = true;
+
+  ok = ok && queDesChiffres(formulaire.secu);
+  return ok;
+}
+</script>
+
+<form onsubmit="return verifForm(this);">
+
+Prenom : <input name="prenom" type="text" onblur="queDesLettres(this);" /><br />
+Nom : <input name="nom" type="text" onblur="queDesLettres(this);" /><br />
+N° Secu : <input name="secu" type="text" onblur="queDesChiffres(this);" /><br /><br />
+
+<input type="submit" />
+</form>
+
+        <p>
+          COde : <input type="text" name="pseudo" /><br />
+          E-mail : <input type="text" name="email" size="30" /><br />
+          Âge : <input type="text" name="age" size="2" /> ans<br />
+          <input type="submit" value="Valider" />
+        </p>-->
+
+        <!--Code <input type="password" value="password" pattern="1234" />
+        <input type="submit" name="envoi" value="Valider" onclick="alert('ton message alerte!')"><br>-->
+
+    <!--  <form>
+      <label for="choose">Code</label>
+      <input id="choose" name="code" pattern="1234" >
+      <button>Valider</button>
+    </form>
+
+    -->

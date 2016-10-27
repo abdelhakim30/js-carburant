@@ -1,0 +1,15 @@
+boby{
+  background-color: red;
+}
+
+span.msg{
+  font-weight:bold;
+}
+
+span.error{
+  color:red;
+}
+
+span.valid{
+  color:green;
+}
